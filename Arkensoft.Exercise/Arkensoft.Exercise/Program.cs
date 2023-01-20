@@ -50,5 +50,36 @@ palindrome.IsPalindrome(head);
 
 palindrome.IsPalindrome2(head);
 
-Console.WriteLine("End");
+
+Anagram anagram = new Anagram();
+bool isAnagram = anagram.IsAnagram("anagram", "nagaram");
+
+Console.WriteLine("isAnagram", isAnagram);
+
+MissingNumber missingNumber = new MissingNumber();
+var mNymber = missingNumber.FindMissingNumber(new int[] { 3, 0, 1 });
+
+Console.WriteLine("MissingNumber [3,0,1] --> ", mNymber);
+
+mNymber = missingNumber.FindMissingNumber(new int[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 });
+
+Console.WriteLine("MissingNumber [9,6,4,2,3,5,7,0,1] --> ", mNymber);
+
+
+CountBits count = new CountBits();
+
+int n = 2;
+var bits = count.GetCountBits(n);
+
+Console.WriteLine("Bits Count for " + n + " --> " + string.Join(",", bits));
+
+n = 5;
+bits = count.GetCountBits(n);
+
+Console.WriteLine("Bits Count for " + n + " --> " + string.Join(",", bits));
+
+MyAtoi myAtoi = new MyAtoi();
+var atoi = myAtoi.GetMyAtoi("3.45646");
+
+Console.WriteLine("atoi --> " + atoi);
 
