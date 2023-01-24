@@ -83,3 +83,18 @@ var atoi = myAtoi.GetMyAtoi("3.45646");
 
 Console.WriteLine("atoi --> " + atoi);
 
+IntersectionofTwoArrays intersectionofTwo = new IntersectionofTwoArrays();
+var result = intersectionofTwo.Intersection(new int[] { 4, 9, 5 }, new int[] { 9, 4, 9, 8, 4 });
+
+Console.WriteLine("Intersection(new int[] { 4, 9, 5 },new int[] { 9, 4, 9, 8, 4 }) --> " + string.Join(",", result));
+
+int num = 104976;
+PerfectSquare perfectSquare = new PerfectSquare();
+var isPerfect = perfectSquare.IsPerfectSquare(num);
+
+Console.WriteLine($"{num} is perfect square ? Answer is {isPerfect}");
+
+string str = "ee";
+FirstUniqChar firstUniqChar = new FirstUniqChar();
+var index = firstUniqChar.FindFirstUniqChar(str);
+Console.WriteLine($"{str} first unique charackter index is {index}");

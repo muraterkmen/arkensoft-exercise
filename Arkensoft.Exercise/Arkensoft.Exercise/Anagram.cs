@@ -40,7 +40,7 @@ namespace Arkensoft.Exercise
 
             foreach (var item in s)
             {
-                if (frequency.Keys.Contains(item))
+                if (frequency.ContainsKey(item))
                 {
                     frequency[item]++;
                 }
